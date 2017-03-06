@@ -1,0 +1,352 @@
+@keyframes opyes {
+    from {opacity:0; margin-left: -100px}
+    to {opacity:1; margin-left:0px;}
+}
+
+@keyframes opno {
+    from {opacity:1; margin-top: 0px}
+    to {opacity:0; margin-top: -10px}
+}
+
+/*@keyframes pos {
+	from {margin-top: -10px;}
+	to {margin-top: 0'}
+}*/
+
+.titlejlm {
+	margin-bottom: 60px;
+}
+
+h2 {
+	margin-top:20px;
+	margin-bottom: 120px;
+}
+
+.eventlist {
+	margin-bottom: 5px;
+	font-size: 22px;
+	display: inline-block;
+}
+
+.bodybg {
+	width:100%;
+	height:100%;
+	position:fixed;
+	overflow: hidden;
+}
+
+.overlayblack {
+	background:black;
+	opacity: 0.5;
+	position: absolute;
+	top:0;
+	width:100%;
+	height:100%;
+}
+
+.blacker {
+	opacity: 0.9;
+	transition: 0.5s cubic-bezier(.19,.81,1,1);
+
+}
+
+.tlvbg {
+	background-image: url(../images/optlev.jpg);
+	background-size:cover;
+	background-position: center center;
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+
+.jlmbg {
+	background-image: url(../images/jlmsnooker.jpg);
+	background-size:cover;
+	background-position: left left;
+	height:100%;
+	position:absolute;
+}
+
+nav {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	/*height: 100px;*/
+	width:100%;
+	top:0px;
+	padding-top: 0px;
+	padding-left: 10%;
+	padding-right: 10%;
+	position: fixed;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.navleftcontainer {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.logo {
+	transform: scale(0.6,0.6);
+	margin: 0;
+	margin-left: -40;
+	padding:0;
+}
+
+.jlmlogo {
+	position: absolute;
+	top:0;
+	opacity: 0;
+}
+
+.navleftcontainer .fontsans {
+	font-size: 20px;
+}
+
+svg {
+	height:70px;
+}
+
+.navsection {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	margin: 0;
+	pointer-events:visible;
+}
+
+.fa:hover {
+	color:#D88071;
+}
+
+.eventlist:hover {
+	color:#D88071;
+}
+
+.colorhover:hover {
+	color:#D88071;
+}
+
+.signuptext {
+	
+	color:white;
+	font-size: 15px;
+	margin:0;
+}
+
+i {
+	color:white;
+	margin-left: 25px;
+}
+
+.sections {
+	display: flex;
+	width:100%;
+	height:100%;
+	position: fixed;
+	
+}
+
+.tlvsection {
+	width:50%;
+	padding-left: 10%;
+	padding-top: 33vh;
+
+}
+
+.jlmsection {
+	width:50%;
+	padding-left: 5%;
+	padding-top: 33vh;
+}
+
+.bar {
+	height:15px;
+	width:175px;
+	background: white;
+	position: absolute;
+	pointer-events:none;
+}
+
+.baronjlm {
+	left:55%;
+	transition: left 1.5s cubic-bezier(.55,.2,.07,.93);
+}
+
+.baroffjlm {
+	left:10%;
+	transition: left 1.5s cubic-bezier(.55,.2,.07,.93);
+}
+
+.width {
+	width:100%;
+	transition: width 1.5s cubic-bezier(.55,.2,.07,.93);
+}
+
+.nowidth {
+	width:0;
+	transition: width 1.5s cubic-bezier(.55,.2,.07,.93);
+}
+
+.line {
+	height: 1px;
+	width:100%;
+	background: white;
+	z-index: 1;
+	pointer-events:none;
+
+}
+
+.scroller {
+	width:80vw;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.opacityyes {
+	margin-top: 0px;
+	opacity: 1;
+	transition: 2s cubic-bezier(.55,.2,.07,.93);
+}
+
+.opacityno {
+	margin-top: -200px;
+	opacity: 0;
+	transition: 2s cubic-bezier(.55,.2,.07,.93);
+}
+
+.scaslehalf {
+	transform:scale(0.5,0.5);
+	transform-origin: left bottom;
+	font-weight: 300;
+}
+
+.icon {
+	width:50px;
+	height: inherit;
+	position: absolute;
+	top:80;
+	transition: 2s cubic-bezier(.55,.2,.07,.93);
+}
+
+.iconcontainer {
+	padding:0;
+	margin:0 0 10px 0;
+	position: relative;
+	overflow: hidden;
+	height:50px;
+	width:50px;
+}
+
+.jlmsection:hover .iconcontainer .icon {
+	top:0;
+}
+
+.tlvsection:hover .iconcontainer .icon {
+	top:0;
+}
+
+.tlveventonebg {
+	background-image: url(../images/tlveventone.jpg);
+	background-size: cover;
+	z-index: 2;
+	animation: opyes 0.2s;
+}
+
+.tlveventtwobg {
+	background-image: url(../images/tlveventtwo.jpg);
+	background-size: cover;
+	z-index: 2;
+}
+
+.jlmeventonebg {
+	background-size: cover;
+	/*z-index: 2;*/
+}
+
+.navleftcontainer {
+	pointer-events: none;
+}
+
+.eventscontainer {
+	overflow: hidden;
+	margin-top: -25px;
+	padding-top: 25px;
+}
+
+.displaynone {
+	display: none;
+}
+
+.bgblackblack {
+	background:black;
+}
+
+.eventsbgtlv {
+	position: absolute;
+	width:50%;
+	height:100%;
+	z-index: -1;
+	top:0;
+}
+
+.eventstlvmotion {
+	left:-300px;
+	opacity:0;
+	transition: 0.5s cubic-bezier(.19,.81,1,1);
+}
+
+.eventonetlv {
+	background-image: url(../images/tlveventone.jpg);
+	background-size:cover;
+	/*animation:opyes 0.5s;*/
+	left:0;
+	opacity:1;
+	transition: 0.5s cubic-bezier(.19,.81,1,1);
+}
+
+.eventtwotlv {
+	background-image: url(../images/tlveventtwo.jpg);
+	background-size:cover;
+	/*animation:opyes 0.5s;*/
+	left:0;
+	opacity:1;
+	transition: 0.5s cubic-bezier(.19,.81,1,1);
+}
+
+.eventsbgjlm {
+	position: absolute;
+	width:50%;
+	height:100%;
+	z-index: -1;
+	top:0;
+}
+
+.eventsjlmmotion {
+	right:-300px;
+	opacity:0;
+	transition: 0.5s cubic-bezier(.19,.81,1,1);
+}
+
+.eventonejlm {
+	background-image: url(../images/jlmeventone.jpg);
+	background-size:cover;
+	right:0;
+	opacity:1;
+	transition: 0.5s cubic-bezier(.19,.81,1,1);
+}
+
+.eventtwojlm {
+	background-image: url(../images/tlveventtwo.jpg);
+	background-size:cover;
+	/*animation:opyes 0.5s;*/
+	left:0;
+	opacity:1;
+	transition: 0.5s cubic-bezier(.19,.81,1,1);
+}
+
