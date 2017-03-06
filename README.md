@@ -1,2 +1,0 @@
-# abrahambar
-Abraham Hostel Bar
